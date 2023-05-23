@@ -1,0 +1,5 @@
+Count of Id difference from ADM 2 = 
+VAR __BASELINE_VALUE = CALCULATE(COUNTA('CME'[Id]), 'CME'[Faculty] IN { "ADM" })
+VAR __MEASURE_VALUE = COUNTA('CME'[Id])
+RETURN
+	__MEASURE_VALUE - __BASELINE_VALUE
