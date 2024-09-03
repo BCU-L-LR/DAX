@@ -1,0 +1,11 @@
+Forecast Academics Updating List = 
+VAR TotalUpdates = 19 // Total updates since July 15
+VAR DaysPassed = 21 // Number of days from July 15 to August 5
+VAR WeeksPassed = DaysPassed / 7 // Calculate the number of weeks
+VAR WeeklyAverage = TotalUpdates / WeeksPassed // Calculate the weekly average
+RETURN
+(WeeklyAverage / 7) + 7 // Apply the forecasting formula
+
+
+
+
