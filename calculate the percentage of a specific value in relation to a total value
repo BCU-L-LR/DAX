@@ -1,0 +1,5 @@
+EDI % = 
+IF(
+    [Total Grand] = 0,
+    0,
+    DIVIDE([EDI], [Total Grand]) * 100)
