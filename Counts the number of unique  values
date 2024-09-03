@@ -1,0 +1,9 @@
+Academics Updating Lists = 
+IF(
+    ISBLANK(
+        DISTINCTCOUNT('As Exported'[Event Creator])
+    ),
+    0,
+    DISTINCTCOUNT('As Exported'[Event Creator])
+)
+
