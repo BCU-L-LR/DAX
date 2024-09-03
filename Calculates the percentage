@@ -1,0 +1,6 @@
+Engagement % = 
+VAR OriginalMeasure = [Academics Updating Lists]
+VAR Percentage = DIVIDE(OriginalMeasure, 1054) * 100
+RETURN
+    IF(OriginalMeasure = 0, 0, Percentage)
+
