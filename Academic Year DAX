@@ -1,0 +1,9 @@
+Academic Year = 
+VAR EventYear = YEAR('As Exported'[Event Date])
+VAR EventMonth = MONTH('As Exported'[Event Date])
+RETURN 
+IF(
+    EventMonth >= 9, 
+    FORMAT(EventYear, "0000") & "/" & FORMAT(EventYear + 1, "00"), 
+    FORMAT(EventYear - 1, "0000") & "/" & FORMAT(EventYear, "00")
+)
