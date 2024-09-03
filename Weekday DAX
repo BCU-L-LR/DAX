@@ -1,0 +1,12 @@
+DayOfWeek = 
+    SWITCH(
+        TRUE(),
+        VALUE('As Exported'[Weekday]) = 1, "Mon",
+        VALUE('As Exported'[Weekday]) = 2, "Tue",
+        VALUE('As Exported'[Weekday]) = 3, "Wed",
+        VALUE('As Exported'[Weekday]) = 4, "Thu",
+        VALUE('As Exported'[Weekday]) = 5, "Fri",
+        VALUE('As Exported'[Weekday]) = 6, "Sat",
+        VALUE('As Exported'[Weekday]) = 7, "Sun",
+        "Unknown"
+    )
