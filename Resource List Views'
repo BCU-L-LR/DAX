@@ -1,0 +1,9 @@
+BLSS Total Views =
+VAR TotalViewsBLSS =
+    CALCULATE(
+        SUM('Student Resource List Views'[Number of Views]),
+        'Student Resource List Views'[Faculty] = "BLSS",
+        'Student Resource List Views'[Event Date] >= DATE(2024, 9, 1)
+    )
+RETURN
+IF(TotalViewsBLSS = 0, 0, TotalViewsBLSS)
